@@ -18,12 +18,12 @@ body {
 h1 {
     font-size: 3rem;
     text-align: center;
-    margin: 20px;
-    padding: 20px;
+    margin: 20px 10px;
+    padding: 10px 20px;
 }
 h2 {
     text-align: center;
-    margin: 25px;
+    font-size: 2rem;
 }
 nav {
     background-color: black;
@@ -51,6 +51,13 @@ footer {
     height: 100px;
     margin: 0;
     padding: 0;
+}
+.navlink {
+    color: white;
+}
+.navlink:hover {
+    color: #D05580;
+    transition: ease-in-out .5s;
 }
 .hero {
     position: relative;
@@ -87,21 +94,43 @@ footer {
     max-width: 500px;
 }
 .link {
-    color: white;
+    color: rgb(0, 0, 0);
     text-decoration: none;
 }
 .link:hover {
     color: #D05580;
     transition: ease-in-out .5s;
 }
+.contact-text {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.contact-text:hover {
+    color: #D05580;
+    transition: ease-in-out .5s;
+}
 .tours {
     display: grid;
-    grid-column: 2 / 4;
-    grid-row: 2 / 3;
     gap: 25px;
-    margin: 150px;
 }
 .footer-text {
     text-align: center;
     margin: 0;
 }
+.footerlink {
+    color: white;
+}
+.footerlink:hover {
+    color: #D05580;
+    transition: ease-in-out .5s;
+}
+@media only screen and (min-width: 800px) {
+    .grid-item1 {
+        grid-column: 1 / 2;
+        gap: 25px;
+    }
+    .grid-item2 {
+        grid-column: 2 / 3;
+        gap: 25px;
+    }
+  }
